@@ -38,5 +38,22 @@ public class NinjaTest {
 		aNinja.setName("Bob");
 		assertEquals("Result", "Bob", aNinja.getName());
 	}
+	
+	@Test
+	public void testDisAppear() {
+		Ninja aNinja = new Ninja ("Bill", "Sword");
+		aNinja.disAppear();
+		assertEquals("Result", false, aNinja.checkVisibility());
+	}
+	
+	@Test
+	public void testReAppear() {
+		Ninja aNinja = new Ninja ("Bill", "Sword");
+		aNinja.disAppear();
+		assertEquals("Result", false, aNinja.checkVisibility());
+		aNinja.reAppear();
+		assertEquals("Result", true, aNinja.checkVisibility());
+	}
+
 
 }

@@ -7,6 +7,7 @@ public class Ninja {
 		this.name = name;
 		this.weapon = weapon;
 		this.onMission = false;
+		this.isVisible = true;
 	}
 	
 	
@@ -33,9 +34,22 @@ public class Ninja {
 		this.onMission = false;
 	}
 	
+	public void disAppear() {
+		this.isVisible = false;
+	}
+	
+	public void reAppear() {
+		this.isVisible = true;
+	}
+	
+	public Boolean checkVisibility() {
+		return this.isVisible;
+	}
+	
 	private String name;
 	private String weapon;
 	private Boolean onMission;
+	private Boolean isVisible;
 	
 	
 }

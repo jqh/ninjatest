@@ -23,6 +23,13 @@ public class Driver {
 		ninja1.endMission();
 		System.out.println("On Mission: " + ninja1.getOnMission());
 		
+		ninja1.disAppear();
+		System.out.println("Is Visible: " + ninja1.checkVisibility());
+
+		ninja1.reAppear();
+		System.out.println("Is Visible: " + ninja1.checkVisibility());
+
+		
 	}
 
 }
